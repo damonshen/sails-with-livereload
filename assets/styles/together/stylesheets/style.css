@@ -1,12 +1,14 @@
 /* line 7, ../sass/style.scss */
-body {
+html, body {
+  height: 100%;
+  margin-top: 0;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   font-family: Arial,MingLiU,sans-serif;
 }
 /* line 12, ../../../../../../../../../../usr/lib/ruby/gems/1.9.1/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
-body::after {
+html::after, body::after {
   content: " ";
   display: block;
   clear: both;
@@ -36,11 +38,11 @@ head:hover {
   color: red;
 }
 /* line 67, ../../../../../../../../../../usr/lib/ruby/gems/1.9.1/gems/susy-2.1.1/sass/susy/language/susy/_background.scss */
-head:hover ~ body, head:hover ~ body body {
+head:hover ~ html, head:hover ~ body html, head:hover ~ body, head:hover ~ body body {
   position: relative;
 }
 /* line 70, ../../../../../../../../../../usr/lib/ruby/gems/1.9.1/gems/susy-2.1.1/sass/susy/language/susy/_background.scss */
-head:hover ~ body::before, head:hover ~ body body::before {
+head:hover ~ html::before, head:hover ~ body html::before, head:hover ~ body::before, head:hover ~ body body::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -56,30 +58,32 @@ head:hover ~ body::before, head:hover ~ body body::before {
   background-clip: content-box;
   background-position: left top;
 }
-/* line 11, ../sass/style.scss */
-body li {
+/* line 13, ../sass/style.scss */
+html li, body li {
   list-style-type: none;
 }
-/* line 14, ../sass/style.scss */
-body a {
+/* line 16, ../sass/style.scss */
+html a, body a {
   text-decoration: none;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 .menu_bar {
   width: 100%;
   float: left;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
   height: 50px;
   background-color: #919499;
   position: fixed;
 }
-/* line 24, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .menu_bar li {
   width: 15.25424%;
   float: right;
   text-align: center;
 }
-/* line 27, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .menu_bar li a {
   border: 1px solid;
   -moz-border-radius: 5px;
@@ -87,7 +91,29 @@ body a {
   border-radius: 5px;
   padding: 5px;
 }
-/* line 28, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .menu_bar li a:hover {
-  color: black;
+  color: red;
+}
+
+/* line 41, ../sass/style.scss */
+.main {
+  width: 100%;
+  float: left;
+  height: 100%;
+}
+/* line 44, ../sass/style.scss */
+.main .page1 {
+  height: 100%;
+  background: black;
+}
+/* line 48, ../sass/style.scss */
+.main .page2 {
+  height: 100%;
+  background: red;
+}
+/* line 52, ../sass/style.scss */
+.main .page3 {
+  height: 100%;
+  background: blue;
 }
