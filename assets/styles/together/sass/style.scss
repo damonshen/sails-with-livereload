@@ -1,0 +1,36 @@
+// Screen
+// ======
+
+@import "grids";
+@import "compass/css3";
+
+body {
+	@include container;
+	//use Arial for english, mingLiu for chinese, sans-serif for others
+	font-family: Arial,MingLiU,sans-serif;
+	li{
+		list-style-type: none;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+.menu_bar {
+	@include span(12);
+	height: 50px;
+	background-color: #919499;
+	position: fixed;
+	li {
+		@include span(2 omega);
+		text-align: center;
+		a {
+			&:hover{
+				color: red;				
+			}
+			border: 1px solid;
+			@include border-radius(5px);
+			padding: 5px;
+		}
+	}
+}

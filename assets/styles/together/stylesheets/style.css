@@ -1,0 +1,93 @@
+/* line 7, ../sass/style.scss */
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial,MingLiU,sans-serif;
+}
+/* line 12, ../../../../../../../../../../usr/lib/ruby/gems/1.9.1/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+body::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 61, ../../../../../../../../../../usr/lib/ruby/gems/1.9.1/gems/susy-2.1.1/sass/susy/language/susy/_background.scss */
+head {
+  display: block;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+  color: #333;
+  background: rgba(255, 255, 255, 0.25);
+}
+/* line 62, ../../../../../../../../../../usr/lib/ruby/gems/1.9.1/gems/susy-2.1.1/sass/susy/language/susy/_background.scss */
+head::before {
+  content: "|||";
+  display: block;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 63, ../../../../../../../../../../usr/lib/ruby/gems/1.9.1/gems/susy-2.1.1/sass/susy/language/susy/_background.scss */
+head:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: red;
+}
+/* line 67, ../../../../../../../../../../usr/lib/ruby/gems/1.9.1/gems/susy-2.1.1/sass/susy/language/susy/_background.scss */
+head:hover ~ body, head:hover ~ body body {
+  position: relative;
+}
+/* line 70, ../../../../../../../../../../usr/lib/ruby/gems/1.9.1/gems/susy-2.1.1/sass/susy/language/susy/_background.scss */
+head:hover ~ body::before, head:hover ~ body body::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  z-index: 998;
+  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-size: 8.47458%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
+/* line 11, ../sass/style.scss */
+body li {
+  list-style-type: none;
+}
+/* line 14, ../sass/style.scss */
+body a {
+  text-decoration: none;
+}
+
+/* line 19, ../sass/style.scss */
+.menu_bar {
+  width: 100%;
+  float: left;
+  height: 50px;
+  background-color: #919499;
+  position: fixed;
+}
+/* line 24, ../sass/style.scss */
+.menu_bar li {
+  width: 15.25424%;
+  float: right;
+  text-align: center;
+}
+/* line 27, ../sass/style.scss */
+.menu_bar li a {
+  border: 1px solid;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+/* line 28, ../sass/style.scss */
+.menu_bar li a:hover {
+  color: black;
+}
