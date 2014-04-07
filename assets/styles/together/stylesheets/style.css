@@ -98,22 +98,19 @@ html a, body a {
 
 /* line 41, ../sass/style.scss */
 .main {
-  width: 100%;
-  float: left;
   height: 100%;
 }
-/* line 44, ../sass/style.scss */
-.main .page1 {
+/* line 43, ../sass/style.scss */
+.main #page1 {
   height: 100%;
-  background: black;
+  background: yellow;
 }
-/* line 48, ../sass/style.scss */
-.main .page2 {
+/* line 47, ../sass/style.scss */
+.main #page2 {
   height: 100%;
   background: red;
 }
-/* line 52, ../sass/style.scss */
-.main .page3 {
+/* line 51, ../sass/style.scss */
+.main #page3 {
   height: 100%;
-  background: blue;
 }

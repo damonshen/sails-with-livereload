@@ -4,7 +4,7 @@
 @import "grids";
 @import "compass/css3";
 
-html,body, {
+html,body{
 	height: 100%;
 	margin-top: 0;
 	@include container;
@@ -39,18 +39,16 @@ html,body, {
 }
 
 .main{
-	@include span(12);
+	height: 100%;
+	#page1{
 		height: 100%;
-	.page1{
-		height: 100%;
-		background: black;
+		background: yellow;
 	}
-	.page2{
+	#page2{
 		height: 100%;
 		background: red;
 	}
-	.page3{
+	#page3{
 		height: 100%;
-		background: blue;
 	}
 }
