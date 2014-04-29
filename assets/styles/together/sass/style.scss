@@ -24,6 +24,7 @@ html,body{
 	height: 50px;
 	background-color: #919499;
 	position: fixed;
+	z-index: 1;
 	li {
 		@include span(2 omega);
 		text-align: center;
@@ -40,6 +41,17 @@ html,body{
 
 .main{
 	height: 100%;
+
+	.title{
+		text-align: center;
+		margin: 5%;
+		font: {
+			family: 'Microsoft JhengHei', serif;
+			size: 30px;
+			weight: bold;
+		}
+		data-depth: '0.3';
+	}
 	#page1{
 		height: 100%;
 		background: yellow;
@@ -52,3 +64,6 @@ html,body{
 		height: 100%;
 	}
 }
+
+
+

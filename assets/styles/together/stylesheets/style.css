@@ -76,14 +76,15 @@ html a, body a {
   height: 50px;
   background-color: #919499;
   position: fixed;
+  z-index: 1;
 }
-/* line 27, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 .menu_bar li {
   width: 15.25424%;
   float: right;
   text-align: center;
 }
-/* line 30, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .menu_bar li a {
   border: 1px solid;
   -moz-border-radius: 5px;
@@ -91,26 +92,35 @@ html a, body a {
   border-radius: 5px;
   padding: 5px;
 }
-/* line 31, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .menu_bar li a:hover {
   color: red;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .main {
   height: 100%;
 }
-/* line 43, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
+.main .title {
+  text-align: center;
+  margin: 5%;
+  font-family: 'Microsoft JhengHei', serif;
+  font-size: 30px;
+  font-weight: bold;
+  data-depth: '0.3';
+}
+/* line 55, ../sass/style.scss */
 .main #page1 {
   height: 100%;
   background: yellow;
 }
-/* line 47, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .main #page2 {
   height: 100%;
   background: red;
 }
-/* line 51, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .main #page3 {
   height: 100%;
 }
