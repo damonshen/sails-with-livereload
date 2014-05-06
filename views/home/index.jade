@@ -3,22 +3,32 @@ extends ../layout
 block styles
 
 block body
-	.menu_bar
-		ul
-			li
-				a#page3Btn(href='#') Home
-			li
-				a#page2Btn(href='#') About
-			li
-				a#page1Btn(href='#') Content
-	.main
-		#page1(data-depth='0.20') page1
-			div(data-scroll-reveal="after 2s, ease-in 32px and reset over .66s") Mel
-			div(data-scroll-reveal="enter from the left after 0.3s, move 40px, over 2s") Mel
-			.title(data-depth='0.3').
-				home page
-			.content(data-depth='0.4') content
-		#page2(data-depth='0.40') page2
-			div(data-scroll-reveal="enter left, move 40px, over 2s, wait 0.3s") Mel
-		#page3 page3
-			div(data-scroll-reveal="enter from the left after 0.3s, move 40px, over 2s") Mel
+    .header
+      .menu-bar
+        ul
+          li
+            a#page1Btn(href='#') Home
+          li
+            a#page2Btn(href='#') About
+          li
+            a#page3Btn(href='#') Content
+          li 
+            a.listBtn list
+            ul.list
+              li 
+                a 1
+              li
+                a 2
+              li
+                a 3
+    .main
+      #page1 page1
+        div(data-scroll-reveal="after 2s, ease-in 32px and reset over .66s") Mel
+        div(data-scroll-reveal="enter from the left after 0.3s, move 40px, over 2s") Mel
+        .title(data-depth='0.3').
+          home page
+        .content(data-depth='0.4') content
+      #page2 page2
+        div(data-scroll-reveal="enter left, move 40px, over 2s, wait 0.3s") Mel
+      #page3 page3
+        div(data-scroll-reveal="enter from the left after 0.3s, move 40px, over 2s") Mel
